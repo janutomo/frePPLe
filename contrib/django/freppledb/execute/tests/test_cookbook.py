@@ -16,12 +16,9 @@
 #
 
 import os.path
-from StringIO import StringIO
-try:
-  from urllib2 import urlopen, URLError
-except:
-  from urllib.request import urlopen
-  from urllib.error import URLError
+from io import StringIO
+from urllib.request import urlopen
+from urllib.error import URLError
 
 from django.conf import settings
 from django.core import management
@@ -69,9 +66,9 @@ class cookbooktest(TransactionTestCase):
     with open(resultfilename, 'r') as f:
       for line in f:
         if opplans[row].strip() != line.strip():
-          print "Got:"
+          print("Got:")
           for i in opplans:
-            print "  ", i.strip()
+            print("  ", i.strip())
           self.fail("Difference in expected results on line %s" % (row + 1))
         row += 1
     if row != len(opplans):
