@@ -200,7 +200,7 @@ string LPSolver::replaceSpaces(const string& input)
 }
 
 
-void LPSolver::writeElement(XMLOutput *o, const Keyword& tag, mode m) const
+void LPSolver::writeElement(Serializer *o, const Keyword& tag, mode m) const
 {
   // Writing a reference
   if (m == REFERENCE)
@@ -211,7 +211,7 @@ void LPSolver::writeElement(XMLOutput *o, const Keyword& tag, mode m) const
 
   // Write the complete object
   if (m != NOHEAD && m != NOHEADTAIL) o->BeginObject
-    (tag, Tags::tag_name, XMLEscape(getName()), Tags::tag_type, getType().type);
+    (tag, Tags::tag_name, getName(), Tags::tag_type, getType().type);
 
   // Fields
   if (getMinimum())

@@ -145,7 +145,7 @@ class LPSolver : public Solver
     /** Return a reference to the list of objectives. */
     const list<string>& getObjectives() const {return objectives;}
 
-    virtual void writeElement(XMLOutput*, const Keyword&, mode=DEFAULT) const;
+    virtual void writeElement(Serializer*, const Keyword&, mode=DEFAULT) const;
     void endElement(XMLInput& pIn, const Attribute& pAttr, const DataElement& pElement);
     virtual PyObject* getattro(const Attribute&);
     virtual int setattro(const Attribute&, const PythonObject&);
