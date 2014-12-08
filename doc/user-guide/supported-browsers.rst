@@ -8,7 +8,7 @@ The frePPLe user interface is fully browser based and can be used with the follo
 
 * **Firefox** 11 and higher.
 
-* | **Internet Explorer** 9 and higher.
+* | **Internet Explorer** 10 and higher.
   | Make sure NOT to run in “compatibility mode”.
 
 * **Safari** 5 and higher.
