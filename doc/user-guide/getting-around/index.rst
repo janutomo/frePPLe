@@ -15,7 +15,7 @@ This section has instructions to navigate through the user interface.
    selecting-time-buckets
    exporting-data
    importing-data
-   customizing-a-screen
+   customizing-a-report
    user-preferences
    user-permissions-and-roles
    comments
