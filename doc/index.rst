@@ -8,6 +8,7 @@ Contents:
 
    cookbook/index
    user-guide/index
+   modelling-guide/index
    installation-guide/index
    extension-modules/index
    faq
