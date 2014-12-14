@@ -12,6 +12,7 @@ The planning engine has 2 native APIs:
   | The XML-data can be placed in any namespace. To support subclassing the
     namespace xsi must be defined as “http://www.w3.org/2001/XMLSchema-instance”.
   | FrePPLe XML files thus typically have the following structure:
+
   ::
 
       <?xml version="1.0" encoding="UTF-8"?>
